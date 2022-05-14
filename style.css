@@ -1,0 +1,87 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Open+Sans:wght@300&family=Quicksand:wght@400;500&display=swap');
+/* Imports */
+
+html{
+    background-color: #131415;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+a{
+  color: white;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+.subtit{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.875rem;
+}
+.cat{
+    border-radius: 0.625rem;
+    border: 0.313rem solid;
+    animation: rgb 6s infinite;
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2rem;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.par{
+    text-align: center;
+    margin: 0.313rem;
+    font-size: 1.25rem;
+}
+.img{
+    width: 10rem;
+    margin: 0.313rem;
+    margin-top: 1rem;
+}
+.imgs{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+@keyframes rgb {
+    0%{
+        border-color: #1F2933;
+        box-shadow: 0px 0px 5px 5px #1F2933;
+    }
+    33%{
+        border-color: #442929;
+        box-shadow: 0px 0px 5px 5px #442929;
+    }
+    66%{
+        border-color: #2c4429;
+        box-shadow: 0px 0px 5px 5px #2c4429;
+    }
+    100%{
+        border-color: #1F2933;
+        box-shadow: 0px 0px 5px 5px #1F2933;
+    }
+}
